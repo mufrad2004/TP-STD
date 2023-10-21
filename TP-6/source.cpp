@@ -148,7 +148,7 @@ void showAll_1301223029(List L){
     int i = 1;
     if (isEmpty_1301223029(L)) {
         cout << "Kosong"<<endl;
-    }else {
+    }else if (L.last ==NULL) {
         while (p != NULL){
             cout << "   +Lagu " << i << " : " <<endl;
             cout << "       -Penyanyi   : " << p->info.penyayi <<endl;
@@ -157,7 +157,15 @@ void showAll_1301223029(List L){
             i++;
             p = p->next;
         }
-
+    }else {
+        while (p != L.last->next){
+            cout << "   +Lagu " << i << " : " <<endl;
+            cout << "       -Penyanyi   : " << p->info.penyayi <<endl;
+            cout << "       -Judul      : " << p->info.judul<<endl;
+            cout << endl;
+            i++;
+            p = p->next;
+        }
     }
 
 }
