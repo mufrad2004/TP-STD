@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1696687162 source:/home/deore/Semester 3/Struktur Data/Minggu-3/TugasPendahuluan_04/main.cpp
+	<iostream>
+	"header.h"
+
+1696688142 /home/deore/Semester 3/Struktur Data/Minggu-3/TugasPendahuluan_04/header.h
+
+1696688128 source:/home/deore/Semester 3/Struktur Data/Minggu-3/TugasPendahuluan_04/source.cpp
+	"header.h"
+	<iostream>
+
