@@ -2,9 +2,6 @@
 #define HEADER_H_INCLUDED
 #include <iostream>
 using namespace std;
-
-
-
 typedef int infotype;
 typedef struct elmList *adr;
 
@@ -31,9 +28,6 @@ void deleteFirst_1301223029(List &L , adr &p);
 void deleteAfter_13012230209(List &L , adr prec, adr &p);
 void deleteLast_1301223029(List &L , adr &p);
 void printInfo_1301223029(List L);
-
 void deleteByValue_1301223029(List &L, infotype x);
 void reverseList_1301223029(List L, List &L2);
-
-
 #endif

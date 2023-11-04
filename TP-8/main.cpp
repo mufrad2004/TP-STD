@@ -1,14 +1,9 @@
 #include <iostream>
 #include "header.h"
 using namespace std;
-
-
-
-
 int main(){
     List L;
     createList_1301223029(L);
-    
     insertLast_1301223029(L, alokasi_1301223029(5));
     insertLast_1301223029(L, alokasi_1301223029(15));
     insertLast_1301223029(L, alokasi_1301223029(25));
@@ -24,9 +19,5 @@ int main(){
     deleteByValue_1301223029(L,45);
     deleteByValue_1301223029(L,85);
     printInfo_1301223029(L);
-
-
-
-
     return 0;
 }

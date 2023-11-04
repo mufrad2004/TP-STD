@@ -1,6 +1,4 @@
 #include "header.h"
-
-
 void createList_1301223029(List &L){
     L.first = NULL;
     L.last = NULL;
