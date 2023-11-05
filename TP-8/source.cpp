@@ -200,9 +200,9 @@ void reverseList_1301223029(List L, List &L2){
         cout << "List Kosong"<<endl;
     }else  {
         p = L.last;
-        duplikasi = alokasi_1301223029(p->info);
-        insertLast_1301223029(L2,duplikasi);
         while (lap != 1){
+            duplikasi = alokasi_1301223029(p->info);
+            insertLast_1301223029(L2,duplikasi);
             p = p->prev;
             if (p == L.last){
                 lap++;

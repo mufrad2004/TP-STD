@@ -2,8 +2,9 @@
 #include "header.h"
 using namespace std;
 int main(){
-    List L;
+    List L,L2;
     createList_1301223029(L);
+    createList_1301223029(L2);
     insertLast_1301223029(L, alokasi_1301223029(5));
     insertLast_1301223029(L, alokasi_1301223029(15));
     insertLast_1301223029(L, alokasi_1301223029(25));
@@ -19,5 +20,8 @@ int main(){
     deleteByValue_1301223029(L,45);
     deleteByValue_1301223029(L,85);
     printInfo_1301223029(L);
+    reverseList_1301223029(L,L2);
+    printInfo_1301223029(L);
+    printInfo_1301223029(L2);
     return 0;
 }
