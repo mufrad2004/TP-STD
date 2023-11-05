@@ -167,26 +167,38 @@ void deleteByValue_1301223029(List &L, infotype x){
     if (L.first == NULL){
         cout << "List Kosong" << endl;
     }else {
-        p = L.first;
-        while (lap != 1 ){
-            if (p->info == x){
-                if (p == L.first){
-                    // * kalo yang sama di awal
-                    deleteFirst_1301223029(L,temp);
-                }else if (p == L.last ){
-                    // * Kalo yang sama di akhir
-                    deleteLast_1301223029(L,temp);
-                }else {
-                    // * kalo yang sama di tengah tengah
-                    deleteAfter_13012230209(L, p->prev , temp);
-                }
-            }
-
-            p = p->next;
+        p = findElm_1301223029(L,x);
+        if (p != NULL){
             if (p == L.first){
-                lap++;
+                deleteFirst_1301223029(L,temp);
+            }else if (p == L.last){
+                deleteLast_1301223029(L,temp);
+            }else {
+                deleteAfter_13012230209(L,p->prev,temp);
             }
         }
+
+
+        // p = L.first;
+        // while (lap != 1 ){
+        //     if (p->info == x){
+        //         if (p == L.first){
+        //             // * kalo yang sama di awal
+        //             deleteFirst_1301223029(L,temp);
+        //         }else if (p == L.last ){
+        //             // * Kalo yang sama di akhir
+        //             deleteLast_1301223029(L,temp);
+        //         }else {
+        //             // * kalo yang sama di tengah tengah
+        //             deleteAfter_13012230209(L, p->prev , temp);
+        //         }
+        //     }
+
+        //     p = p->next;
+        //     if (p == L.first){
+        //         lap++;
+        //     }
+        // }
     }   
 
 }
